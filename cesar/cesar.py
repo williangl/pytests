@@ -11,10 +11,10 @@ txt2 = 'xyz'
 
 def cripto(txt1: str) -> str:
     """Função de criptografia."""
-    cipher1 = []
+    cipher1 = ''
     for letra1 in txt1:
-        cipher1.append(alf[(alf.index(letra1) + 3) % len(alf)])
-    return ''.join(cipher1)
+        cipher1 += alf[(alf.index(letra1) + 3) % len(alf)]
+    return cipher1
 
 
 """
