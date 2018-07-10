@@ -22,5 +22,11 @@ class TesteCesar(TestCase):
         esperado = 'abc'
         self.assertEqual(cesar.cripto(entrada), esperado)
 
+    def test_decript(self):
+        """Testar a função de descriptografia."""
+        entrada = 'def'
+        esperado = 'abc'
+        self.assertEqual(cesar.decript(entrada), esperado)
+
 
 main()
